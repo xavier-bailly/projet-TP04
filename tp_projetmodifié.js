@@ -21,7 +21,7 @@ function tempProc() {
 			
 		while (isNaN(tempProc) || tempProc < 0 || tempProc > 100) {
 			tempProc = +prompt("erreur mettez un nombre entre 1 et 100")}
-		console.log("votre proc est a " + tempProc + "C°");
+		console.log("votre proc est a " + tempProc + " C°");
 
 		let vent = +prompt("niveau de votre ventilateur de 1 à 3");
 		while (isNaN(vent) || vent < 1 || vent > 3) {

@@ -15,7 +15,6 @@ son ventilateur avoir des temperature moins élevée et s'il à moins de 45°C p
 un niveau inférieur.
 */
 
-console.log("une ligne a la con")
 function tempProc() {
 	for(i=0;1<100;i) {
 		let tempProc = +prompt("Température de votre processeur, de 0 à 100");
@@ -30,19 +29,15 @@ function tempProc() {
 		}
 			console.log("votre niveau de ventilateur est de " + vent);
 
-		if (tempProc < 40 || tempProc > 75) {
+		if (tempProc < 40 || tempProc > 85) {
 			alert("Il y a un problème avec votre ventilateur, remplacer le ou nettoyez le.");
 			break;
 		}
-		else if (vent === 1 && tempProc > 65) {
-			alert("vous feriez mieux de mettre le niveau 2 pour avoir des températures plus basses");
-			break;
-		}
-		else if (vent === 2 && tempProc > 65) {
+		else if ((vent === 1||vent ===2) && tempProc > 75) {
 			alert("vous feriez mieux de mettre le niveau 3 pour avoir des températures plus basses");
 			break;
 		}
-		else if (vent === 2 && tempProc < 45) {
+		else if ((vent === 2||vent === 3) && tempProc < 50) {
 			alert("vous pouvez mettre le niveau 1 pour avoir des températures moins basses");
 			break;
 		}
@@ -50,13 +45,18 @@ function tempProc() {
 			alert("vous devriez nettoyer votre ventilateur ou changer de ventilateur pour avoir des températures moins élevées");
 			break;
 		}
-		else if (vent === 3 && tempProc < 45) {
-			alert("vous pouvez mettre le niveau 2 pour avoir des températures moins basses");
-			break;
-		}
 		else {
 			alert("Tout va bien.")
 			break;
 		}
 	}
+}
+function mettreventniv3(){
+	alert{"votre ventilateur est bien en vitesse 3"}
+}
+function mettreventniv2(){
+	alert("votre ventillateur est bien en vitesse 2")
+}
+function mettreventniv1(){
+	alert("votre ventillateur est bien en vitesse 1")
 }

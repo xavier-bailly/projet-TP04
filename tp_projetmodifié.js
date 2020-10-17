@@ -51,7 +51,7 @@ function tempProc() {
 	}
 }
 function mettreventniv3(){
-	alert{"votre ventilateur est bien en vitesse 3"}
+	alert("votre ventilateur est bien en vitesse 3")
 }
 function mettreventniv2(){
 	alert("votre ventillateur est bien en vitesse 2")

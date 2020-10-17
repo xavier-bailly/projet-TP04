@@ -32,6 +32,10 @@ function tempProc() {
 		if (tempProc < 40 || tempProc > 85) {
 			alert("Il y a un problème avec votre ventilateur, remplacer le ou nettoyez le.");
 		}
+		else if(vent===0){
+			alert("vérifiez si votre ordinateur est bien branché. Si c'est le cas changez-le")
+		}
+		
 		else if ((vent === 1||vent ===2) && tempProc > 75) {
 			alert("vous feriez mieux de mettre le niveau 3 pour avoir des températures plus basses");
 		}

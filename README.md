@@ -1,9 +1,9 @@
 # projet-TP04
-Kashemwa Thomas HE201918
-hendrickx julien HE125065
-Biard Florent he201813
-Dziemianko Sebastian HE201808
-Bailly xavier HE201838
+Kashemwa Thomas HE201918 
+hendrickx julien HE125065 
+Biard Florent he201813 
+Dziemianko Sebastian HE201808 
+Bailly xavier HE201838 
 
 Demander à l'utilisateur la température de son processeur, (entre 0°C et 100°C, sinon le processeur meurt) 
 Ainsi que le niveau du ventilateur (le niveau de flux d'air de 1 à 3). 

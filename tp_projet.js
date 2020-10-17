@@ -18,7 +18,7 @@ un niveau inférieur.
 
 function tempProc() {
 	let i = 0;
-	while (i <= 100) {
+	for (i <= 100) {
 		let tempProc = +prompt("Température de votre processeur, de 0 à 100");
 			
 		if (isNaN(tempProc) || tempProc < 0 || tempProc > 100) {

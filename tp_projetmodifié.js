@@ -10,8 +10,8 @@ pour avoir des temperature moins élevée.
 si le niveau du ventilateur est au niveau 2 et qu'il a plus de 65°C indiquez qu'il peut passer au niveaux 2 
 pour avoir des temperature moins élevée et s'il à moins de 45°C proposer de passer a un niveau inférieur.
 
-si le niveau du ventilateur est au niveau 3 et qu'il a plus de 72°C indiquez qu'il doit nettoyer 
-son ventilateur avoir des temperature moins élevée et s'il à moins de 45°C proposer de passer a 
+si le niveau du ventilateur est au niveau 3 et qu'il a plus de 85°C indiquez qu'il doit nettoyer 
+son ventilateur pour avoir des temperature moins élevée et s'il à moins de 45°C proposer de passer a 
 un niveau inférieur.
 */
 

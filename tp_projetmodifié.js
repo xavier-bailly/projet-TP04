@@ -16,7 +16,7 @@ un niveau inférieur.
 */
 
 function tempProc() {
-	for(i=0;1<100;i) {
+	for(let i=0; i<1;i++) {
 		let tempProc = +prompt("Température de votre processeur, de 0 à 100");
 			
 		while (isNaN(tempProc) || tempProc < 0 || tempProc > 100) {
@@ -30,24 +30,21 @@ function tempProc() {
 			console.log("votre niveau de ventilateur est de " + vent);
 
 		if (tempProc < 40 || tempProc > 85) {
-			alert("Il y a un problème avec votre ventilateur, remplacer le ou nettoyez le.");
-			break;
+			alert("Il y a un problème avec votre ventilateur, remplacer le ou nettoyez le.");	
 		}
 		else if ((vent === 1||vent ===2) && tempProc > 75) {
 			alert("vous feriez mieux de mettre le niveau 3 pour avoir des températures plus basses");
-			break;
+			
 		}
 		else if ((vent === 2||vent === 3) && tempProc < 50) {
 			alert("vous pouvez mettre le niveau 1 pour avoir des températures moins basses");
-			break;
+			
 		}
 		else if (vent === 3 && tempProc > 72) {
 			alert("vous devriez nettoyer votre ventilateur ou changer de ventilateur pour avoir des températures moins élevées");
-			break;
 		}
 		else {
 			alert("Tout va bien.")
-			break;
 		}
 	}
 }

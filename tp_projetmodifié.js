@@ -16,12 +16,12 @@ un niveau inférieur.
 */
 
 function tempProc() {
-	for(let i=0;i<1;i++) {
+	for(i=0;1<100;i) {
 		let tempProc = +prompt("Température de votre processeur, de 0 à 100");
 			
 		while (isNaN(tempProc) || tempProc < 0 || tempProc > 100) {
 			tempProc = +prompt("erreur mettez un nombre entre 1 et 100")}
-		console.log("votre proc est a " + tempProc + " C°");
+		console.log("votre proc est a " + tempProc + "C°");
 
 		let vent = +prompt("niveau de votre ventilateur de 1 à 3");
 		while (isNaN(vent) || vent < 1 || vent > 3) {
@@ -31,31 +31,51 @@ function tempProc() {
 
 		if (tempProc < 40 || tempProc > 85) {
 			alert("Il y a un problème avec votre ventilateur, remplacer le ou nettoyez le.");
+			break;
 		}
-		else if(vent===0){
-			alert("vérifiez si votre ordinateur est bien branché. Si c'est le cas changez-le")
-		}
-		
 		else if ((vent === 1||vent ===2) && tempProc > 75) {
 			alert("vous feriez mieux de mettre le niveau 3 pour avoir des températures plus basses");
+			break;
 		}
 		else if ((vent === 2||vent === 3) && tempProc < 50) {
 			alert("vous pouvez mettre le niveau 1 pour avoir des températures moins basses");
+			break;
 		}
 		else if (vent === 3 && tempProc > 72) {
 			alert("vous devriez nettoyer votre ventilateur ou changer de ventilateur pour avoir des températures moins élevées");
+			break;
 		}
 		else {
-			alert("Tout va bien.");
+			alert("Tout va bien.")
+			break;
 		}
 	}
 }
+
+
+function verificationVitesseVent() {
+	let vv = Math.random();
+	if (vv >= 0 && vv < (1/10)) {
+		alert("Votre ventilateur est en vitesse : 0");
+	}
+	else if (vv >= (1/10) && vv < (4/10)) {
+		alert("Votre ventilateur est en vitesse : 1");
+	}
+	else if (vv >= (4/10) && vv < (7/10)) {
+		alert("Votre ventilateur est en vitesse : 2");
+	}
+	else if (vv >= (7/10) && vv < 1) {
+		alert("Votre ventilateur est en vitesse : 3");
+	}
+}
+
+
 function mettreventniv3(){
-	alert("votre ventilateur est bien en vitesse 3")
+	alert("votre ventilateur à été mis en vitesse 3")
 }
 function mettreventniv2(){
-	alert("votre ventillateur est bien en vitesse 2")
+	alert("votre ventillateur à été mis en vitesse 2")
 }
 function mettreventniv1(){
-	alert("votre ventillateur est bien en vitesse 1")
+	alert("votre ventillateur à été mis en vitesse 1")
 }

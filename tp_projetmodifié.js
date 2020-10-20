@@ -53,7 +53,7 @@ function tempProc() {
 function verificationVitesseVent() {
 	let vv = Math.random();
 	if (vv >= 0 && vv < (1/10)) {
-		alert("Votre ventilateur est en vitesse : 0");
+		alert("Votre ventilateur est en vitesse : 0 (Rembrancher le si il est débranché sinon remplacez le)");
 	}
 	else if (vv >= (1/10) && vv < (4/10)) {
 		alert("Votre ventilateur est en vitesse : 1");

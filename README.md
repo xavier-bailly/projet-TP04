@@ -16,3 +16,5 @@ Si le niveau du ventilateur est au niveau 2 et qu'il a plus de 65°C indiquez qu
  
 Si le niveau du ventilateur est au niveau 3 et qu'il a plus de 85°C indiquez qu'il doit nettoyer son ventilateur ou changer de ventilateur pour avoir des températures moins élevées et s'il a moins de 45°C proposer de passer à un niveau inférieur. 
 Sinon indiquez que tout va bien. 
+
+Si le ventilateur est au niveau 0 remplacer ou rebrancher le ventilateur.

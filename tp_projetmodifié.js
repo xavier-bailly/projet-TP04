@@ -19,7 +19,7 @@ function tempProc() {
 	for(let i=0; i<1;i++) {
 		let tempProc = +prompt("Température de votre processeur, de 0 à 100");
 			
-		while (isNaN(tempProc) || tempProc < 0 || tempProc > 100) {
+		while (isNaN(tempProc) || tempProc < 0 || tempProc >= 100) {
 			tempProc = +prompt("erreur mettez un nombre entre 1 et 100")}
 		console.log("votre proc est a " + tempProc + "C°");
 
@@ -32,7 +32,7 @@ function tempProc() {
 		if (tempProc < 40 || tempProc > 85) {
 			alert("Il y a un problème avec votre ventilateur, remplacer le ou nettoyez le.");	
 		}
-		else if ((vent === 1||vent ===2) && tempProc > 75) {
+		else if ((vent === 1||vent ===2) && tempProc > 80) {
 			alert("vous feriez mieux de mettre le niveau 3 pour avoir des températures plus basses");
 			
 		}
